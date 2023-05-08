@@ -12,7 +12,10 @@ the algorithms implemented in this program.
 How to use: 
 
 Simply scroll down to my main program and enter the file
-name path for the data in the space provided. Further down, there is a
+name path for the data in the space provided. In the Data folder, 
+you can find the data files I used for this project: iris.names 
+(file containing info on how data is set up) and iris.data 
+(actual data to be clustered). Further down, there is a
 PARAMETERS section, where you can change the parameters for both
 algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data, which can be adjusted
