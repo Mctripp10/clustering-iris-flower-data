@@ -2,7 +2,7 @@
 Michael Tripp,
 5/1/2023
 
-Utilizing various clustering machine learning algorithms (Agglomerative Clustering and DBSCAN) to analyze and build models for the Iris (flower) data set.
+Utilizing various unsupervised learning clustering algorithms (Agglomerative Clustering and DBSCAN) to analyze and build models for the Iris (flower) data set.
 
 Contained in the Code folder is clustering_alg.py, the program containing
 my code for both agglomerative clustering and DBSCAN. There is also
