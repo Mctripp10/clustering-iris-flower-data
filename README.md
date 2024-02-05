@@ -29,7 +29,7 @@ as I think it would be difficult to understand just by my code comments.
 
 For agglomerative clustering, I used a dictionary to store the data 
 points so that I could use the key values to figure out what cluster 
-a given point is in when a merge happens. Then when a point is merged, 
+a given point is in when a merge happens. Then, when a point is merged, 
 I replace the position where it was in the dictionary with the index of
 the cluster where it was just merged to. This way, I can go to any 
 given point's index in the dictionary and find which cluster that point
