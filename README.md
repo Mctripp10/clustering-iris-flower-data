@@ -9,7 +9,7 @@ my code for both agglomerative clustering and DBSCAN. There is also
 a document results_discussion.pdf providing discussion and analysis of 
 the algorithms implemented in this program. 
 
-How to use: 
+**How to use: **
 
 Simply scroll down to my main program and enter the file
 name path for the data in the space provided. In the Data folder, 
@@ -21,7 +21,7 @@ algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data, which can be adjusted
 in the PARAMETERS section as well.
 
-Implementation: 
+**Implementation: **
 
 I'll note that I took two different approaches when coding these 
 two algorithms in how I stored the data, so I'll explain them here 
