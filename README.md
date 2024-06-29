@@ -38,13 +38,13 @@ dictionary ends up with a few key values with a list of data points
 as the values, while the rest are simply set to int indexes. As such,
 I can then extract the clusters from this dictionary.
 
-In DBSCAN, I wanted to try a list index based method because I wasn't
-sure I was liking the dictionary based method much. Rather, in my DBSCAN
-algorithm, I stored a regular 1D list of all the data points, and simply
-had my algorithm keep track of indices into that list throughout the
-method. This way, I could easily check if a given data point was in a cluster
-by simply storing clusters as a list of the data points' indices and checking
-to see if the given data point's index was in that cluster's list. This concept
-is used throughout the algorithm. Then, I could simply use a method to retrieve
+In DBSCAN, I used a list index method as I felt using a dictionary added 
+some unecessary complexities to the logic. Thus, in my DBSCAN algorithm, 
+I instead stored a 1D list of all the data points and simply had my 
+algorithm keep track of indices into that list throughout the method. This
+way, I could easily check if a given data point was in a cluster by simply
+storing clusters as a list of the data points' indices and checking to see
+if the given data point's index was in that cluster's list. This concept is
+used throughout the algorithm. Then, I could simply use a method to retrieve
 the data corresponding to those indices anytime by indexing into the original
 data list.
