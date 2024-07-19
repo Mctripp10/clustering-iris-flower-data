@@ -53,7 +53,7 @@ def calc_distances(data, d):
 Method used to plot 4D data in a 2D plane given x_index and y_index
 as the indices of which features to plot. For higher dimensional data lists.
 '''
-def plot_data(data, x_index, y_index):
+def plot_data(data, x_index, y_index, show_plot):
     x = []
     y = []
             
@@ -73,11 +73,14 @@ def plot_data(data, x_index, y_index):
     for i in range(len(data)):
         plt.scatter(x[i], y[i])
 
+    if show_plot:
+        plt.show()
+
 '''
 Method used to plot 4D data in a 2D plane given x_index and y_index
 as the indices of which features to plot. For 1D data lists.
 '''
-def plot_data2(data, x_index, y_index):
+def plot_data_1D(data, x_index, y_index):
     x = []
     y = []
             
@@ -89,7 +92,7 @@ def plot_data2(data, x_index, y_index):
     plt.ylabel('y - axis')
     
     plt.scatter(x, y, color='grey')
-
+    plt.show()
 
 '''
 Single Link Agglomerative Clustering
@@ -156,7 +159,7 @@ def agglomerative_clustering(cluster_map, d, growth_rate, x_axis, y_axis):
     
     plt.figure(num_clusters)
     #plot_data(partition_at_3_clusters, x_axis, y_axis)
-    plot_data(partition_with_longest_time, x_axis, y_axis)
+    plot_data(partition_with_longest_time, x_axis, y_axis, True)
     
 '''
 Method used to convert a list of indices to a list containing the actual
@@ -286,9 +289,9 @@ def DBSCAN(data, d, eps, minPts, x_axis, y_axis):
     
     # Plot each cluster in a different color and noise in grey
     clusters_data = indicies_to_data(data, clusters)
-    plot_data(clusters_data, x_axis, y_axis)
+    plot_data(clusters_data, x_axis, y_axis, False)
     noise_data = indicies_to_data2(data, noise_indices)
-    plot_data2(noise_data, x_axis, y_axis)
+    plot_data_1D(noise_data, x_axis, y_axis)
     
 def plot_labeled_data(labeled_data):
     x = []
@@ -322,7 +325,7 @@ if __name__ == '__main__':
     '''
     FILE NAME: Set file name path for data here
     '''
-    fname = ""
+    fname = "C:/Users/Mctri/Workspaces/github-repos/clustering-iris-flower-data/data/iris.data"
     
     fin = open(fname)
     data_map = {}
@@ -368,7 +371,7 @@ if __name__ == '__main__':
     x_axis = 0
     y_axis = 1
     
-    ALG = PLOT_LABELS # <-- Choose what algorithm to run
+    ALG = DBSCAN_ALG # <-- Choose what algorithm to run
     
     if ALG == DBSCAN_ALG:
         DBSCAN(data_list, euclidian_distance, search_distance, minPts, x_axis, y_axis)
