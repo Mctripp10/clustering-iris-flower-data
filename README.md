@@ -1,30 +1,30 @@
 # Clustering Iris Flower Data
 
-Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset.
+Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset. The image below shows the labeled dataset projected onto a 2D plane. The algorithms I wrote attempt to replicate this using non-labeled data.
 
-Contained in the Code folder is `clustering_alg.py`, the program containing
-my code for both agglomerative clustering and DBSCAN. There is also
-a document `results_discussion.pdf` providing discussion and analysis of 
-the algorithms implemented in this program. 
+![labeled_fig1](./resources/labeled_fig1.png)
+
+- `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithm
+- `./data` contains the training data
+  - `iris.data` - file containing iris flower dataset
+  - `iris.name` - file containing information on how data was gathered and how `iris.data` is organized
+- `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this program
 
 ## How to use
 
 - Fork the repository, or download the files, unzip, and open in your code editor.
-- Scroll down to my main program and enter the file
-name path for the data in the space provided. In the Data folder, 
-you can find the data files I used for this project: `iris.names`
-(file containing info on how data is set up) and `iris.data`
-(actual data to be clustered).
+- Scroll down to my main program and enter the path to the `iris.data` file.
 - Further down, there is a PARAMETERS section, where you can change the parameters for both
 algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data, which can be adjusted
-in the PARAMETERS section as well.
+in the PARAMETERS section as well. See `results_discussion.pdf` for discussion on what parameters yielded the best results. 
 
 ## Implementation
 
-I'll note that I took two different approaches when coding these 
-two algorithms in how I stored the data, so I'll explain them here 
-as I think it would be difficult to understand just by my code comments. 
+I took two different approaches when coding these algorithms in how I stored the data, so I'll explain them here
+to aid in understanding my code beyond my code comments.
+
+#### Agglomerative clustering
 
 For agglomerative clustering, I used a dictionary to store the data 
 points so that I could use the key values to figure out what cluster 
@@ -36,6 +36,8 @@ is in by following the dictionary key values. Then at the end, the
 dictionary ends up with a few key values with a list of data points
 as the values, while the rest are simply set to int indexes. As such,
 I can then extract the clusters from this dictionary.
+
+#### DBSCAN
 
 In DBSCAN, I used a list index method as I felt using a dictionary added 
 some unecessary complexities to the logic. Thus, in my DBSCAN algorithm, 
