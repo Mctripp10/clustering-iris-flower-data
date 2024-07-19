@@ -1,6 +1,6 @@
 # Clustering Iris Flower Data
 
-Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to analyze and build identification models for the iris flower dataset.
+Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset.
 
 Contained in the Code folder is `clustering_alg.py`, the program containing
 my code for both agglomerative clustering and DBSCAN. There is also
