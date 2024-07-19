@@ -2,23 +2,22 @@
 
 Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset.
 
-Contained in the Code folder is `clustering_alg.py`, the program containing
-my code for both agglomerative clustering and DBSCAN. There is also
-a document `results_discussion.pdf` providing discussion and analysis of 
-the algorithms implemented in this program. 
+![labeled_fig1](./resources/labeled_fig1.png)
+
+- `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithm
+- `./data` contains the training data
+  - `iris.data` - file containing iris flower dataset
+  - `iris.name` - file containing information on how data was gathered and how `iris.data` is organized
+- `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this program
 
 ## How to use
 
 - Fork the repository, or download the files, unzip, and open in your code editor.
-- Scroll down to my main program and enter the file
-name path for the data in the space provided. In the Data folder, 
-you can find the data files I used for this project: `iris.names`
-(file containing info on how data is set up) and `iris.data`
-(actual data to be clustered).
+- Scroll down to my main program and enter the path to the `iris.data` file.
 - Further down, there is a PARAMETERS section, where you can change the parameters for both
 algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data, which can be adjusted
-in the PARAMETERS section as well.
+in the PARAMETERS section as well. See `results_discussion.pdf` for discussion on what parameters yielded the best results. 
 
 ## Implementation
 
