@@ -325,7 +325,7 @@ if __name__ == '__main__':
     '''
     FILE NAME: Set file name path for data here
     '''
-    fname = "C:/Users/Mctri/Workspaces/github-repos/clustering-iris-flower-data/data/iris.data"
+    fname = ""
     
     fin = open(fname)
     data_map = {}
