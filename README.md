@@ -22,12 +22,12 @@ algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data, which can be adjusted
 in the PARAMETERS section as well. See `results_discussion.pdf` for discussion on what parameters yielded the best results. 
 
-## Implementation
+## Implementation & Results
 
 I took two different approaches when coding these algorithms in how I stored the data, so I'll explain them here
 to aid in understanding my code beyond my code comments.
 
-#### Agglomerative clustering
+### Agglomerative clustering
 
 For agglomerative clustering, I used a dictionary to store the data 
 points so that I could use the key values to figure out what cluster 
@@ -42,7 +42,9 @@ I can then extract the clusters from this dictionary.
 
 ![agglom_fig](./resources/agglom_fig.png)
 
-#### DBSCAN
+Above is one grouping I was able to get with agglomerative clustering when stopping at three clusters. Noting the size of the orange cluster, we could speculate two of the flower groups are more closely related than the blue cluster, so the model just combined them into one large cluster.
+
+### DBSCAN
 
 In DBSCAN, I used a list index method as I felt using a dictionary added 
 some unecessary complexities to the logic. Thus, in my DBSCAN algorithm, 
@@ -56,3 +58,8 @@ the data corresponding to those indices anytime by indexing into the original
 data list.
 
 ![dbscan_fig](./resources/dbscan_fig.png)
+
+Above is one grouping I was able to get with DBSCAN when plotting the first and fourth features. Note that DBSCAN also allows us to find outliers in addition to clusters. These are denoted in grey. Aside from some of these outliers, these clusters are pretty much the same as our labeled plot above!
+
+As mentioned previously, see `results_discussion.pdf` for further explanation and analysis on these models.
+
