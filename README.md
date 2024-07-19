@@ -22,9 +22,8 @@ in the PARAMETERS section as well.
 
 ## Implementation
 
-I'll note that I took two different approaches when coding these 
-two algorithms in how I stored the data, so I'll explain them here 
-as I think it would be difficult to understand just by my code comments. 
+I took two different approaches when coding these algorithms in how I stored the data, so I'll explain them here
+to aid in understanding my code beyond my code comments.
 
 For agglomerative clustering, I used a dictionary to store the data 
 points so that I could use the key values to figure out what cluster 
