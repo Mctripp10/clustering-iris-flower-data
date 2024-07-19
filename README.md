@@ -24,6 +24,8 @@ in the PARAMETERS section as well. See `results_discussion.pdf` for discussion o
 I took two different approaches when coding these algorithms in how I stored the data, so I'll explain them here
 to aid in understanding my code beyond my code comments.
 
+#### Agglomerative clustering
+
 For agglomerative clustering, I used a dictionary to store the data 
 points so that I could use the key values to figure out what cluster 
 a given point is in when a merge happens. Then, when a point is merged, 
@@ -34,6 +36,8 @@ is in by following the dictionary key values. Then at the end, the
 dictionary ends up with a few key values with a list of data points
 as the values, while the rest are simply set to int indexes. As such,
 I can then extract the clusters from this dictionary.
+
+#### DBSCAN
 
 In DBSCAN, I used a list index method as I felt using a dictionary added 
 some unecessary complexities to the logic. Thus, in my DBSCAN algorithm, 
