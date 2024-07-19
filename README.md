@@ -1,9 +1,12 @@
 # Clustering Iris Flower Data
 
-Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset. The image below shows the labeled dataset projected onto a 2D plane. The algorithms I wrote attempt to replicate this using non-labeled data.
+Program that utilizes unsupervised learning clustering algorithms (agglomerative clustering and DBSCAN) to build models for identifying the iris flower dataset. 
 
-![labeled_fig1](./resources/labeled_fig1.png)
+![labeled_fig](./resources/labeled_fig.png)
 
+The image above shows the labeled dataset projected onto a 2D plane. The algorithms I wrote attempt to replicate this using non-labeled data.
+
+## Project Overview
 - `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithm
 - `./data` contains the training data
   - `iris.data` - file containing iris flower dataset
@@ -37,6 +40,8 @@ dictionary ends up with a few key values with a list of data points
 as the values, while the rest are simply set to int indexes. As such,
 I can then extract the clusters from this dictionary.
 
+![agglom_fig](./resources/agglom_fig.png)
+
 #### DBSCAN
 
 In DBSCAN, I used a list index method as I felt using a dictionary added 
@@ -49,3 +54,5 @@ if the given data point's index was in that cluster's list. This concept is
 used throughout the algorithm. Then, I could simply use a method to retrieve
 the data corresponding to those indices anytime by indexing into the original
 data list.
+
+![dbscan_fig](./resources/dbscan_fig.png)
