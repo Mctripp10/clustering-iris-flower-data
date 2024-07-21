@@ -61,5 +61,5 @@ data list.
 
 Above is one grouping I was able to get with DBSCAN when plotting the first and fourth features. Note that DBSCAN also allows us to find outliers in addition to clusters. These are denoted in grey. Aside from some of these outliers, these clusters are pretty much the same as our labeled plot above!
 
-As mentioned previously, see `results_discussion.pdf` for further explanation and analysis of these models.
+See `results_discussion.pdf` for further explanation and analysis of these models.
 
