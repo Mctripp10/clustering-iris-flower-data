@@ -4,13 +4,13 @@ Program that utilizes unsupervised learning clustering algorithms (agglomerative
 
 ![labeled_fig](./resources/labeled_fig.png)
 
-The image above shows the labeled dataset projected onto a 2D plane. The algorithms I wrote attempt to replicate this using non-labeled data.
+The image above shows the labeled dataset projected onto a 2D plane (plotting the first feature on the x-axis and the fourth feature on the y-axis). The algorithms I wrote attempt to replicate this using non-labeled data.
 
 ## Project Layout
 - `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithms
 - `./data` contains the training data
   - `iris.data` - file containing iris flower dataset
-  - `iris.name` - file containing information on how data was gathered and how `iris.data` is organized
+  - `iris.name` - file containing information on how data was gathered, what features are used, and how `iris.data` is organized
 - `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this project
 
 ## How to use
@@ -42,7 +42,7 @@ I can then extract the clusters from this dictionary.
 
 ![agglom_fig](./resources/agglom_fig.png)
 
-Above is one grouping I was able to get with agglomerative clustering when stopping at three clusters. Noting the size of the orange cluster, we could speculate two of the flower groups are more closely related than the blue cluster, so the model just combined them into one large cluster.
+Above is one grouping I was able to get with agglomerative clustering when stopping at three clusters (here I plotted the first feature on the x-axis and the _second_ feature on the y-axis). Noting the size of the orange cluster, we could speculate two of the flower groups are more closely related than the blue cluster, so the model just combined them into one large cluster.
 
 ### DBSCAN
 
