@@ -10,7 +10,7 @@ The image above shows the labeled dataset projected onto a 2D plane (plotting th
 - `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithms
 - `./data` contains the training data
   - `iris.data` - file containing iris flower dataset
-  - `iris.name` - file containing information on how data was gathered, what features are used, and how `iris.data` is organized
+  - `iris.name` - file containing information on how data was gathered, features used, and how `iris.data` is organized
 - `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this project
 
 ## How to use
