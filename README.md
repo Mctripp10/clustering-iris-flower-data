@@ -11,7 +11,7 @@ The image above shows the labeled dataset projected onto a 2D plane. The algorit
 - `./data` contains the training data
   - `iris.data` - file containing iris flower dataset
   - `iris.name` - file containing information on how data was gathered and how `iris.data` is organized
-- `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this program
+- `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this project
 
 ## How to use
 
