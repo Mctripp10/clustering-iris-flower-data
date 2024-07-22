@@ -6,8 +6,8 @@ Program that utilizes unsupervised learning clustering algorithms (agglomerative
 
 The image above shows the labeled dataset projected onto a 2D plane. The algorithms I wrote attempt to replicate this using non-labeled data.
 
-## Project Overview
-- `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithm
+## Project Layout
+- `clustering_algs.py` contains my code for both the agglomerative clustering and DBSCAN algorithms
 - `./data` contains the training data
   - `iris.data` - file containing iris flower dataset
   - `iris.name` - file containing information on how data was gathered and how `iris.data` is organized
