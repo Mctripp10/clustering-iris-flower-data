@@ -25,7 +25,7 @@ in the PARAMETERS section as well. See `results_discussion.pdf` for discussion o
 ## Implementation & Results
 
 I took two different approaches when coding these algorithms in how I stored the data, so I'll explain them here
-to aid in understanding my approach beyond my code comments.
+to aid in understanding my code beyond my comments.
 
 ### Agglomerative clustering
 
