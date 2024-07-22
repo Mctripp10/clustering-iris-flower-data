@@ -2,10 +2,11 @@
 # 5/1/2023 | CS614
 # Lab 3: Unsupervised Learning
 #
-# Program to implement 2 types of unsupervised learning
+# Program to implement two types of unsupervised learning
 # algorithms, agglomerative clustering and DBSCAN. See 
-# readme.txt for more information on how these are implemented
-# outside of the code comments.
+# README.md for more information on how these are implemented
+# outside of the code comments. See also results_discussion.pdf
+# for analysis and discussion of the results.
 
 import pprint
 import math
@@ -325,7 +326,7 @@ if __name__ == '__main__':
     '''
     FILE NAME: Set file name path for data here
     '''
-    fname = ""
+    fname = "./data/iris.data"
     
     fin = open(fname)
     data_map = {}
@@ -369,7 +370,7 @@ if __name__ == '__main__':
     
     # indicate which features to plot as the axes
     x_axis = 0
-    y_axis = 1
+    y_axis = 3
     
     ALG = DBSCAN_ALG # <-- Choose what algorithm to run
     
