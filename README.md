@@ -15,8 +15,12 @@ The image above shows the labeled dataset projected onto a 2D plane (plotting th
 
 ## How to use
 
-- Fork the repository, or download the files, unzip, and open in your code editor.
-- Find the PARAMETERS section in the main function. Here, you can change the parameters for both
+1. Clone the repository:
+   ```
+   git clone https://github.com/mctripp10/clustering-iris-flower-data.git
+   ```
+   
+2. Locate the PARAMETERS section in the main function. Here, you can change the parameters for both
 algorithms. Note that since the data is 4D, we specify two of the four
 features to plot in order to visualize the data. Which features are displayed are two such parameters
 that can be adjusted. See `results_discussion.pdf` for discussion on what parameters yielded the best results. 
