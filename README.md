@@ -13,7 +13,7 @@ The image above shows the labeled dataset projected onto a 2D plane (plotting th
   - `iris.name` - file containing information on how data was gathered, features used, and how `iris.data` is organized
 - `results_discussion.pdf` contains discussion and analysis of the algorithms implemented in this project
 
-## How to use
+## Installation & Setup
 
 1. Clone the repository:
    ```
