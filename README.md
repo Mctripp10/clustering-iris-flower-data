@@ -22,7 +22,7 @@ The image above shows the labeled dataset projected onto a 2D plane (plotting th
 
 2. Navigate to project directory
    ```
-   cd ../clustering-iris-flower-data
+   cd clustering-iris-flower-data
    ```
    
 3. Install libraries
